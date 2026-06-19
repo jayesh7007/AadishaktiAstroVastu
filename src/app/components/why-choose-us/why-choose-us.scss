@@ -1,0 +1,201 @@
+$primary-dark: #1a3a52;
+$primary-gold: #d4af37;
+$secondary-orange: #e67e22;
+$accent-purple: #6b5b95;
+$light-cream: #f5e6d3;
+$text-dark: #2c3e50;
+$text-light: #ecf0f1;
+$gray-light: #f0f0f0;
+
+.why-choose-us {
+  padding: 4rem 2rem;
+  background: white;
+
+  .why-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h2 {
+      font-size: 2.5rem;
+      color: $primary-dark;
+      margin: 0 0 0.5rem 0;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: $secondary-orange;
+      margin: 0;
+      font-weight: 500;
+    }
+  }
+
+  .reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+
+      @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .reason-card {
+      background: linear-gradient(135deg, $gray-light 0%, rgba(245, 230, 211, 0.3) 100%);
+      border-radius: 15px;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, $primary-gold, $secondary-orange);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 35px rgba(212, 175, 55, 0.2);
+
+        &::before {
+          transform: scaleX(1);
+        }
+
+        .reason-icon {
+          transform: scale(1.15);
+        }
+      }
+
+      .reason-icon {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, $primary-gold 0%, $secondary-orange 100%);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 1.5rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+
+        i {
+          font-size: 2rem;
+          color: $primary-dark;
+        }
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        color: $primary-dark;
+        margin: 0 0 0.8rem 0;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: $text-dark;
+        line-height: 1.6;
+        margin: 0;
+      }
+    }
+  }
+
+  .final-cta {
+    background: linear-gradient(135deg, $primary-dark 0%, $accent-purple 100%);
+    border-radius: 20px;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 768px) {
+      padding: 2rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: $light-cream;
+      margin: 0 0 1rem 0;
+      font-weight: 700;
+
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: rgba($text-light, 0.9);
+      margin: 0 0 2rem 0;
+    }
+
+    p {
+      font-size: 1rem;
+      color: rgba($text-light, 0.85);
+      margin: 0 0 2rem 0;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-start {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      background: linear-gradient(135deg, $primary-gold 0%, $secondary-orange 100%);
+      color: $primary-dark;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 35px rgba(212, 175, 55, 0.6);
+      }
+    }
+
+    .btn-wa {
+      background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+
+      &:hover {
+        box-shadow: 0 15px 35px rgba(37, 211, 102, 0.5);
+      }
+    }
+  }
+}
+
+.section-eyebrow {
+  display: inline-block;
+  color: $secondary-orange;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}

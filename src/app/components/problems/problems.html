@@ -1,0 +1,21 @@
+<section class="problems">
+  <div class="problems-container">
+    <div class="section-header">
+      <span class="section-eyebrow">✦ Problems We Solve ✦</span>
+      <h2>Astrological Solutions for Life's Challenges</h2>
+      <p class="subtitle">जीवनातील प्रत्येक समस्येवर ज्योतिषीय उपाय | Find answers through the power of Vedic Astrology</p>
+    </div>
+
+    <div class="problems-grid">
+      @for (problem of problems; track problem.title) {
+        <div class="problem-card">
+          <div class="problem-icon">
+            <i class="fas" [ngClass]="problem.icon"></i>
+          </div>
+          <h3>{{ problem.title }}</h3>
+          <p>{{ problem.description }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

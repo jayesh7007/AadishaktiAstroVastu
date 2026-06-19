@@ -1,0 +1,41 @@
+<section id="services" class="services">
+  <div class="services-container">
+    <div class="section-header">
+      <span class="section-eyebrow">✦ Our Services ✦</span>
+      <h2>Comprehensive Astrological Services</h2>
+      <p class="subtitle">ज्योतिष, वास्तुशास्त्र आणि अंकशास्त्रात तज्ज्ञ मार्गदर्शन | Expert guidance for every aspect of life</p>
+    </div>
+
+    <div class="service-categories">
+      <span class="category-pill">Love Problem</span>
+      <span class="category-pill">Business Problem</span>
+      <span class="category-pill">Husband Wife Dispute</span>
+      <span class="category-pill">Back Your Ex</span>
+      <span class="category-pill">PR or Visa Problem</span>
+      <span class="category-pill">Family Problem</span>
+      <span class="category-pill">Marriage Delay</span>
+    </div>
+
+    <div class="services-grid">
+      @for (service of services; track service.title) {
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas" [ngClass]="service.icon"></i>
+          </div>
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+          <a href="tel:9890750627" class="service-link">
+            Consult Now <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      }
+    </div>
+
+    <div class="services-cta">
+      <p>Not sure what you need? Reach out and we'll guide you.</p>
+      <a href="https://wa.me/919890750627" target="_blank" rel="noopener" class="btn-consult">
+        <i class="fab fa-whatsapp"></i> Chat with Us on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,26 @@
+<section id="testimonials" class="testimonials">
+  <div class="testimonials-container">
+    <div class="section-header">
+      <span class="section-eyebrow">✦ Client Reviews ✦</span>
+      <h2>What Our Clients Say</h2>
+      <p class="subtitle">Real Stories of Transformation and Success | खऱ्या कथा — खरे परिणाम</p>
+    </div>
+
+    <div class="testimonials-grid">
+      @for (testimonial of testimonials; track testimonial.name) {
+        <div class="testimonial-card">
+          <div class="rating">
+            @for (star of [1,2,3,4,5]; track star) {
+              <i class="fas fa-star"></i>
+            }
+          </div>
+          <p class="feedback">"{{ testimonial.feedback }}"</p>
+          <div class="testimonial-author">
+            <h4>{{ testimonial.name }}</h4>
+            <p class="title">{{ testimonial.title }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

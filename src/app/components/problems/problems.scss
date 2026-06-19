@@ -1,0 +1,110 @@
+$primary-dark: #1a3a52;
+$primary-gold: #d4af37;
+$secondary-orange: #e67e22;
+$accent-purple: #6b5b95;
+$light-cream: #f5e6d3;
+$text-dark: #2c3e50;
+$text-light: #ecf0f1;
+$gray-light: #f0f0f0;
+
+.problems {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, $light-cream 0%, $gray-light 100%);
+
+  .problems-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    .section-eyebrow {
+      display: inline-block;
+      color: $secondary-orange;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: $primary-dark;
+      margin: 0 0 0.5rem 0;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: #6b7280;
+      margin: 0;
+      font-weight: 400;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+  }
+
+  .problems-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    .problem-card {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      border-left: 4px solid transparent;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 30px rgba(212, 175, 55, 0.15);
+        border-left-color: $primary-gold;
+
+        .problem-icon {
+          transform: scale(1.1) rotate(10deg);
+        }
+      }
+
+      .problem-icon {
+        width: 70px;
+        height: 70px;
+        background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(230, 126, 34, 0.2));
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 1.5rem;
+        transition: all 0.3s ease;
+
+        i {
+          font-size: 1.8rem;
+          color: $secondary-orange;
+        }
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        color: $primary-dark;
+        margin: 0 0 1rem 0;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: $text-dark;
+        line-height: 1.6;
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+<nav class="navbar">
+  <div class="navbar-top-bar">
+    <div class="navbar-top-text">Aadishakti Astro &amp; Vastu Research Centre</div>
+  </div>
+
+  <div class="navbar-ticker">
+    <div class="ticker-track">
+<span>✅ 100% Genuine Guidance | 100% खरे मार्गदर्शन</span>
+<span>⭐ 2000+ Happy Clients | 2000+ समाधानी ग्राहक</span>
+<span>🔒 Confidential Consultation | गोपनीय सल्लामसलत</span>
+<span>✅ 100% Genuine Guidance | 100% खरे मार्गदर्शन</span>
+<span>⭐ 2000+ Happy Clients | 2000+ समाधानी ग्राहक</span>
+<span>🔒 Confidential Consultation | गोपनीय सल्लामसलत</span>
+    </div>
+  </div>
+
+  <div class="navbar-container">
+    <div class="logo">
+      <span class="logo-symbol">🕉</span>
+      <span class="brand-name">Aadishakti Astro</span>
+    </div>
+
+    <button class="menu-toggle" [class.active]="isMenuOpen()" (click)="toggleMenu()" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-menu" [class.active]="isMenuOpen()">
+      <li><a href="#home" (click)="closeMenu()">Home</a></li>
+      <li><a href="#about" (click)="closeMenu()">About Us</a></li>
+      <li><a href="#services" (click)="closeMenu()">Services</a></li>
+      <li><a href="#testimonials" (click)="closeMenu()">Reviews</a></li>
+      <li><a href="#contact" (click)="closeMenu()">Contact Us</a></li>
+    </ul>
+
+    <a href="https://wa.me/919890750627" target="_blank" rel="noopener" class="cta-button nav-cta">
+      <i class="fab fa-whatsapp"></i> Book Consultation
+    </a>
+  </div>
+</nav>

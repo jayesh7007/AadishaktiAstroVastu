@@ -1,0 +1,122 @@
+$primary-dark: #1a3a52;
+$primary-gold: #d4af37;
+$secondary-orange: #e67e22;
+$accent-purple: #6b5b95;
+$light-cream: #f5e6d3;
+$text-dark: #2c3e50;
+$text-light: #ecf0f1;
+$gray-light: #f0f0f0;
+
+.testimonials {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, $gray-light 0%, #eeeeee 100%);
+
+  .testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    .section-eyebrow {
+      display: inline-block;
+      color: $secondary-orange;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: $primary-dark;
+      margin: 0 0 0.5rem 0;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: #6b7280;
+      margin: 0 auto;
+      max-width: 620px;
+      font-weight: 400;
+    }
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    .testimonial-card {
+      background: white;
+      border-radius: 15px;
+      padding: 2.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      position: relative;
+      border-top: 5px solid transparent;
+
+      &::before {
+        content: '\\201C';
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 3rem;
+        color: $primary-gold;
+        opacity: 0.2;
+      }
+
+      &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        border-top-color: $primary-gold;
+      }
+
+      .rating {
+        display: flex;
+        gap: 0.3rem;
+        margin-bottom: 1.5rem;
+
+        i {
+          color: $primary-gold;
+          font-size: 0.9rem;
+        }
+      }
+
+      .feedback {
+        font-size: 0.95rem;
+        color: $text-dark;
+        line-height: 1.8;
+        margin: 0 0 1.5rem 0;
+        font-style: italic;
+      }
+
+      .testimonial-author {
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba($text-dark, 0.1);
+
+        h4 {
+          font-size: 1rem;
+          color: $primary-dark;
+          margin: 0 0 0.3rem 0;
+          font-weight: 600;
+        }
+
+        .title {
+          font-size: 0.85rem;
+          color: $secondary-orange;
+          margin: 0;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

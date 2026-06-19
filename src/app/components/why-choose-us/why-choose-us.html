@@ -1,0 +1,34 @@
+<section class="why-choose-us">
+  <div class="why-container">
+    <div class="section-header">
+      <span class="section-eyebrow">✦ Why Choose Us ✦</span>
+      <h2>Why Choose Aadishakti Astro?</h2>
+      <p class="subtitle">Your Trust is Our Greatest Achievement — तुमचा विश्वास हीच आमची सर्वात मोठी उपलब्धी आहे</p>
+    </div>
+
+    <div class="reasons-grid">
+      @for (reason of reasons; track reason.title) {
+        <div class="reason-card">
+          <div class="reason-icon">
+            <i class="fas" [ngClass]="reason.icon"></i>
+          </div>
+          <h3>{{ reason.title }}</h3>
+          <p>{{ reason.description }}</p>
+        </div>
+      }
+    </div>
+
+    <div class="final-cta">
+      <h3>Ready to Transform Your Life?</h3>
+      <p>आजच संपर्क साधा आणि तुमचे जीवन बदला</p>
+      <div class="cta-buttons">
+        <a href="tel:9890750627" class="btn-start">
+          <i class="fas fa-phone"></i> Call Now
+        </a>
+        <a href="https://wa.me/919890750627" target="_blank" rel="noopener" class="btn-start btn-wa">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
