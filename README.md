@@ -105,7 +105,7 @@ I've created a **fully functional, modern, and responsive** Angular 21 website w
    - Phone: 9890750627
    - Email: aadishaktiastro91@gmail.com
    - WhatsApp integration
-   - 24/7 availability notice
+   <!-- - 24/7 availability notice -->
 10. **Footer** - Complete with social links and quick navigation
 
 ### **Design Features:**

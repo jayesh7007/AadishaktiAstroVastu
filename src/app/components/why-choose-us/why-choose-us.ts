@@ -19,7 +19,7 @@ export class WhyChooseUs {
   reasons: Reason[] = [
     { icon: 'fa-award', title: 'Expert Guidance', description: 'Certified astrologist with proven expertise' },
     { icon: 'fa-user-shield', title: 'Confidential', description: 'Your privacy and anonymity respected' },
-    { icon: 'fa-headset', title: '24/7 Availability', description: 'Always available for consultations' },
+    // { icon: 'fa-headset', title: '24/7 Availability', description: 'Always available for consultations' },
     { icon: 'fa-check-double', title: 'Accurate Readings', description: 'Precision in every prediction' },
     { icon: 'fa-bolt', title: 'Quick Solutions', description: 'Effective remedies for your concerns' },
     { icon: 'fa-globe', title: 'Global Reach', description: 'Serving clients worldwide online' }

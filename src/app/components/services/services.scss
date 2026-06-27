@@ -196,3 +196,29 @@ $border-light: #f0e6d0;
     font-size: 1.8rem;
   }
 }
+.service-actions {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+.service-link--call {
+  border-color: $secondary-gold;
+  color: darken($secondary-gold, 15%);
+
+  &:hover {
+    background: $secondary-gold;
+    color: $primary-dark;
+    transform: translateX(0);
+  }
+}
+.service-link--whatsapp {
+  border-color: #25d366;
+  color: #25d366;
+
+  &:hover {
+    background: #25d366;
+    color: #fff;
+    transform: translateX(0);
+  }
+}
