@@ -19,8 +19,8 @@
     <div class="services-grid">
       @for (service of services; track service.title) {
         <div class="service-card">
-          <div class="service-icon">
-            <i class="fas" [ngClass]="service.icon"></i>
+          <div class="service-image">
+            <img [src]="service.image" [alt]="service.title" loading="lazy" />
           </div>
           <h3>{{ service.title }}</h3>
           <p>{{ service.description }}</p>

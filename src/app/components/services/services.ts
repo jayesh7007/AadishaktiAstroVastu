@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 interface Service {
-  icon: string;
+  image: string;
   title: string;
   description: string;
 }
@@ -18,67 +18,67 @@ interface Service {
 export class Services {
   services: Service[] = [
     {
-      icon: 'fa-star',
+      image: '/Horoscope & Birth Chart.jpg',
       title: 'Horoscope & Birth Chart',
       description: 'Detailed analysis of your birth chart and personalized horoscope readings'
     },
     {
-      icon: 'fa-briefcase',
+      image: '/Career & Business.jpg',
       title: 'Career & Business',
       description: 'Expert guidance for career advancement and business success'
     },
     {
-      icon: 'fa-coins',
+      image: '/Finance & Wealth.jpg',
       title: 'Finance & Wealth',
       description: 'Wealth astrology and financial guidance for prosperity'
     },
     {
-      icon: 'fa-book',
+      image: '/Education & Study.jpg',
       title: 'Education & Study',
       description: 'Astrological solutions for academic excellence and learning'
     },
     {
-      icon: 'fa-ring',
+      image: '/Marriage & Compatibility.jpg',
       title: 'Marriage & Compatibility',
       description: 'Matchmaking and marital compatibility analysis'
     },
     {
-      icon: 'fa-heart',
+      image: '/Love & Relationships.jpg',
       title: 'Love & Relationships',
       description: 'Solutions for relationship issues and love concerns'
     },
     {
-      icon: 'fa-baby',
+      image: '/Childbirth & Progeny.jpg',
       title: 'Childbirth & Progeny',
       description: 'Progeny astrology and auspicious timing for childbirth'
     },
     {
-      icon: 'fa-stethoscope',
+      image: '/Health & Medical.jpeg',
       title: 'Health & Medical',
       description: 'Health predictions and medical astrology consultations'
     },
     {
-      icon: 'fa-plane',
+      image: '/Foreign Settlement.jpg',
       title: 'Foreign Settlement',
       description: 'Guidance for international relocation and visa success'
     },
     {
-      icon: 'fa-hand',
+      image: '/Palmistry.jpg',
       title: 'Palmistry',
       description: 'Palm reading and life line analysis for your future'
     },
     {
-      icon: 'fa-calculator',
+      image: '/Numerology.jpg',
       title: 'Numerology',
       description: 'Numerology analysis and lucky number predictions'
     },
     {
-      icon: 'fa-home',
+      image: '/Vastu Consultation.jpg',
       title: 'Vastu Consultation',
       description: 'Home and office Vastu solutions for positive energy'
     },
     {
-      icon: 'fa-clock',
+      image: '/Auspicious Timing.jpg',
       title: 'Auspicious Timing',
       description: 'Muhurat calculations for important life events'
     }
