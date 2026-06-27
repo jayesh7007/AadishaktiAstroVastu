@@ -81,7 +81,7 @@ I've created a **fully functional, modern, and responsive** Angular 21 website w
 
 1. **Navbar** - Fixed navigation with smooth scrolling links and WhatsApp CTA
 2. **Hero Section** - Eye-catching banner with "Discover Your Cosmic Destiny" messaging and floating cards
-3. **Stats Section** - Shows credibility (5000+ clients, 20+ years, 100% success, 15+ countries)
+3. **Stats Section** - Shows credibility (5000+ clients, 10+ years, 100% success, 15+ countries)
 4. **About Section** - Profile of Shri Nilesh Joshi with credentials and expertise list
 5. **Services Section** - All 13 services beautifully displayed:
    - Horoscope & Birth Chart Analysis

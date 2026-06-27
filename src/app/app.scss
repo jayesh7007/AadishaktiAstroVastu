@@ -1,3 +1,4 @@
+@use 'sass:color';
 // Shared color variables (used by app-level template)
 $primary-dark: #003857;
 $secondary-gold: #fbffb3;
@@ -38,7 +39,7 @@ $text-dark: #003857;
   box-shadow: 0 10px 28px rgba(255, 0, 0, 0.25);
 
   &:hover {
-    background: darken($secondary-orange, 8%);
+    background: color.adjust($secondary-orange, $lightness: -8%);
     box-shadow: 0 16px 36px rgba(255, 0, 0, 0.35);
   }
 }

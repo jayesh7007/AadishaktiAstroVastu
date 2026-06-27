@@ -18,7 +18,7 @@ interface Stat {
 export class Stats {
   stats: Stat[] = [
     { number: '30K+', label: 'Satisfied Clients', icon: 'fa-users' },
-    { number: '20+', label: 'Years Experience', icon: 'fa-calendar' },
+    { number: '10+', label: 'Years Experience', icon: 'fa-calendar' },
     { number: '100%', label: 'Client Success', icon: 'fa-check' },
     { number: '15+', label: 'Countries Served', icon: 'fa-globe' }
   ];
