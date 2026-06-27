@@ -103,7 +103,7 @@ I've created a **fully functional, modern, and responsive** Angular 21 website w
 8. **Testimonials** - Client success stories with 5-star ratings
 9. **Contact Section** - Full contact form + direct contact methods:
    - Phone: 9890750627
-   - Email: nealbhojane@gmail.com
+   - Email: aadishaktiastro91@gmail.com
    - WhatsApp integration
    - 24/7 availability notice
 10. **Footer** - Complete with social links and quick navigation
